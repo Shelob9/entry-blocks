@@ -24,9 +24,11 @@ function enqueue_block_editor_assets() {
 			'wp-blocks',
 			'wp-data',
 			'wp-edit-post',
+			'wp-editor',
 			'wp-element',
 			'wp-i18n',
 			'wp-plugins',
+			'wp-components'
 		],
 	];
 

@@ -24,5 +24,16 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "webpack-manifest-plugin": "^2.0.4"
+  },
+  "dependencies": {
+    "@caldera-labs/api-client": "^0.6.1",
+    "@caldera-labs/components": "^1.6.0",
+    "@caldera-labs/state": "^0.9.0",
+    "@wordpress/components": "^7.0.4",
+    "@wordpress/data": "^4.1.0",
+    "@wordpress/editor": "^9.0.6",
+    "@wordpress/element": "^2.1.8",
+    "locutus": "^2.0.10",
+    "react-css-grid": "^2.0.0-0"
   }
 }
