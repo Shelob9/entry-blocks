@@ -136,7 +136,7 @@ const Edit = ({
 
 	inlineElements.push(createElement(InspectorControls, {}, inspectorControlsElements));
 	return createElement('div', {className}, inlineElements);
-}
+};
 
 const Save = ({attributes}) => {
 	const {
@@ -167,11 +167,8 @@ const Save = ({attributes}) => {
 
 export const options = {
 	title: 'Caldera Forms Entry Value',
-
 	description: 'Display one entry field value of an entry',
-
 	icon: 'images-alt',
-
 	category: 'widgets',
 	attributes: {
 		"formId": {
