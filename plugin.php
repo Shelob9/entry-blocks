@@ -10,10 +10,19 @@
  */
 
 // Enqueue editor UI scripts & styles.
-require_once( __DIR__ . '/inc/asset-loader.php' );
-require_once( __DIR__ . '/inc/scripts.php' );
+require_once ( __DIR__  . '/vendor/autoload.php' );
+require_once( __DIR__ . '/php-functions/asset-loader.php' );
+require_once( __DIR__ . '/php-functions/scripts.php' );
 HMR_Demo\Scripts\setup();
 
+add_action( 'init', function(){
+	register_block_type('caldera-entry-blocks/entry-value', [
+		'render_callback' => function($atts){
+			return (new \calderawp\calderaForms\EntryBlocks\Blocks\RenderCallback\EntryValue() )
+				->render($atts);
+		}
+	]);
+});
 
 add_action('caldera_forms_includes_complete', function () {
 	class FormsRoute extends Caldera_Forms_API_Forms

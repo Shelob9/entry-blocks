@@ -193,6 +193,5 @@ export const options = {
 		}
 	},
 	edit: Edit,
-
 	save: Save
 };
