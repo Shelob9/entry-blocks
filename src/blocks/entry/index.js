@@ -105,7 +105,6 @@ const Edit = ({
 		inspectorControlsElements.push(EntryChooser);
 	}
 
-	console.log(formId);
 	if (formId && entryId) {
 		const formFields = select(CALDERA_FORMS_ENTRIES_SLUG).getFormFieldsForEntry(formId);
 		if ('object' === typeof formFields) {
