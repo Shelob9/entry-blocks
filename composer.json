@@ -1,4 +1,5 @@
 {
+  "name": "calderawp/entry-blocks",
   "autoload": {
     "psr-4": {
       "calderawp\\calderaForms\\EntryBlocks\\": "php-classes"
