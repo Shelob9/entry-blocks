@@ -33,6 +33,7 @@
     "@wordpress/data": "^4.1.0",
     "@wordpress/editor": "^9.0.6",
     "@wordpress/element": "^2.1.8",
+    "axios": "^0.18.0",
     "locutus": "^2.0.10",
     "react-css-grid": "^2.0.0-0"
   }

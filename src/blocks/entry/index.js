@@ -60,6 +60,7 @@ const Edit = ({
 	let TEMPLATE = [
 		[ENTRY_VALUE_BLOCK_NAME, {entryId, formId}],
 	];
+	console.log(TEMPLATE);
 
 
 	if (!isSelected) {
@@ -128,15 +129,18 @@ const Edit = ({
 	}
 
 	inlineElements.push(createElement(InspectorControls, {}, inspectorControlsElements));
-	const innerBlocks = <InnerBlocks
-		className={className}
-		template={TEMPLATE}
-		allowed={ALLOWED_BLOCKS}
-		templateLock={false}
+    if (formId && entryId) {
+        const innerBlocks = <InnerBlocks
+            className={className}
+            template={TEMPLATE}
+            allowed={ALLOWED_BLOCKS}
+            templateLock={false}
 
-	/>;
+        />;
+        inlineElements.push(innerBlocks);
 
-	inlineElements.push(innerBlocks);
+    }
+
 	return createElement('div', {className}, inlineElements);
 };
 

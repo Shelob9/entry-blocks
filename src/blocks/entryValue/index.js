@@ -7,11 +7,12 @@ import DisplayWithState from './DisplayWithState';
 import Display from './Display'
 import {CALDERA_FORMS_ENTRIES_SLUG} from "../../store/entryStore";
 import {dispatch, select} from '@wordpress/data';
-//import {InspectorControls} from '@wordpress/editor';
-const {InspectorControls} = wp.editor;
 import {createElement, Fragment} from '@wordpress/element';
 import {EntryValueInlineEditor} from "../../components/Entry/Edit/Inline";
 import {ChooseEntryField, getFormFieldsOfForm} from "../../components/controls/ChooseEntryField";
+
+//import {InspectorControls} from '@wordpress/editor';
+const {InspectorControls} = wp.editor;
 
 
 /** Need block name in both formats for now, deal with it**/
@@ -53,7 +54,7 @@ const Edit = ({
 				}
 			);
 		}
-		return <div> :) </div>
+		return <Fragment />
 	}
 	const setFormId = (formId) => setAttributes({formId});
 	const setEntryId = (entryId) => setAttributes({entryId});

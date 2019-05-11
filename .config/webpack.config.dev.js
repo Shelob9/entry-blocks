@@ -18,8 +18,8 @@ onExit( () => {
 	}
 } );
 
-const port = parseInt( process.env.PORT, 10 ) || 3030;
-const publicPath = `http://localhost:${ port }/build/`;
+const port = parseInt( process.env.PORT, 10 ) || 3031;
+const publicPath = `https://localhost:${ port }/build/`;
 
 /**
  * Theme development build configuration.
@@ -31,6 +31,7 @@ module.exports = {
 
 	// Allow config to override shared devServer properties.
 	devServer: {
+		https: true,
 		headers: {
 			'Access-Control-Allow-Origin': '*',
 		},
